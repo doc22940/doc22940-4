@@ -30,8 +30,13 @@ body {
     margin-left: 12%;
 }
 
-.comingsoon{
+@media (max-width: 858px) {
+    .main-text {
+        font-size: 3rem;
+    }
+}
 
+.comingsoon {
     text-align: center;
     margin-top: 10vh;
     font-size: 1.5rem;
@@ -40,24 +45,38 @@ body {
     margin-left: 12%;
     opacity: 0.8;
     animation: blinker-cs 1.5s linear 0s infinite;
-
 }
 
-@keyframes blinker-cs{
-    from{
+.sociallinks {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 1.5rem;
+    margin-right: 12%;
+    margin-left: 12%;
+    a {
+        opacity: 0.8;
+        color: #70a1ff;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+
+        &:hover {
+            opacity: 1;
+            color: #70a1ff;
+            text-decoration: none;
+        }
+    }
+}
+
+@keyframes blinker-cs {
+    from {
         opacity: 1;
     }
 
-    to{
+    to {
         opacity: 0;
     }
 }
 
-@media (max-width: 858px){
-    .main-text{
-        font-size: 3rem;
-    }
-}
 nav {
     height: 80px;
     width: 100%;
